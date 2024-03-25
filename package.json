@@ -1,0 +1,22 @@
+{
+  "name": "dile-components",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "type": "module",
+  "version": "2.0.0",
+  "description": "Dile Components new repo",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+
+  "keywords": [
+    "web",
+    "components",
+    "dile",
+    "ui"
+  ],
+  "author": "EscuelaIT",
+  "license": "MIT"
+}
