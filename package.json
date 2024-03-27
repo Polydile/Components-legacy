@@ -8,7 +8,8 @@
   "version": "2.0.0",
   "description": "Dile Components new repo",
   "scripts": {
-    "dev": "vite"
+    "dev": "vite",
+    "lerna": "lerna"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,7 @@
   "author": "EscuelaIT",
   "license": "MIT",
   "devDependencies": {
+    "lerna": "^8.1.2",
     "vite": "^5.2.6"
   },
   "dependencies": {
