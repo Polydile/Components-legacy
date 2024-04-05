@@ -1,6 +1,6 @@
 {
   "name": "@dile/ui",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "UI Core components from dile-components.",
   "main": "index.js",
   "scripts": {
@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/Polydile/Components#readme",
   "dependencies": {
-    "@dile/icons": "^2.0.0",
+    "@dile/icons": "^2.0.2",
     "lit": "^2.7.0 || ^3.0.0"
   },
   "publishConfig": {
