@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/Polydile/Components#readme",
   "dependencies": {
+    "@dile/icons": "^2.0.0",
     "lit": "^2.7.0 || ^3.0.0"
   },
   "publishConfig": {
