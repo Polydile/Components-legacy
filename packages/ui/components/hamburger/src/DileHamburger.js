@@ -13,7 +13,7 @@ export class DileHamburger extends LitElement {
         display: inline-block;
       }
       .hamburger {
-        padding: var(--dile-hamburger-padding-y, 15px) var(--dile-hamburger-padding-x, 15px);
+        padding: var(--dile-hamburger-padding-y, 5px) var(--dile-hamburger-padding-x, 5px);
         display: flex;
         align-items: center;
         cursor: pointer;
@@ -57,7 +57,7 @@ export class DileHamburger extends LitElement {
       .hamburger-inner::after {
         width: var(--dile-hamburger-width, 24px);
         height: var(--dile-hamburger-line-size, 3px);
-        background-color: var(--dile-hamburger-color, #000);
+        background-color: var(--dile-foreground-color, #000);
         border-radius: var(--dile-hamburger-line-size, 3px);
         position: absolute;
         transition-property: transform;
