@@ -9,7 +9,8 @@
   "description": "Dile Components new repo",
   "scripts": {
     "dev": "vite",
-    "lerna": "lerna"
+    "lerna": "lerna",
+    "start": "npx @11ty/eleventy --serve"
   },
   "repository": {
     "type": "git",

@@ -3,10 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dile Components: Web Components Catalog</title>
+  <title>{{ title | default: "Dile Components: Web Components Catalog" }}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
+  <header>
+    <dile-nav menu="right">
+      <span slot="title" class="site-name">
+        <a href="/">
+          <img src="/images/logo-polydile.png" alt="logo polydile">
+        </a>
+        <b>dile-components</b>
+      </span>
+      <dile-menu-hamburger hamburgerAlwaysVisible slot="menu">
+        <nav class="app-menu" slot="menu">
+          <p><a href="one.html">Link one</a></p>
+          <p><a href="two.html">Link two</a></p>
+        </nav>
+      </dile-menu-hamburger>
+    </dile-nav>
+  </header>
+
+
   <main>
     {{ content }}
   </main>

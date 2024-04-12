@@ -1,0 +1,10 @@
+html {
+  --dile-primary-color: #f3f3ae;
+
+  --dile-nav-padding-y: 5px;
+  --dile-nav-padding-x: 0.75rem;
+  --dile-nav-background-color: var(--secondary-color);
+  --dile-nav-column-gap: 0.25rem;
+  
+  --dile-hamburger-padding-x: 0.15rem;
+}

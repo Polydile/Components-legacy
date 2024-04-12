@@ -1,0 +1,19 @@
+dile-nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #303030;
+}
+dile-nav span.site-name {
+  display: flex; 
+  align-items: center;
+  font-size: 1.1rem;
+}
+dile-nav a {
+  text-decoration: none;
+}
+dile-nav img {
+  position: relative;
+  top: 6px;
+  height: 40px;
+  margin-right: 0.5rem;
+}
