@@ -75,46 +75,20 @@ Custom property | Description | Default
 
 > **Tip:** You can use the hamburger menu on this site to see this component in action.
 
-```js preview-story
-import { LitElement, css } from 'lit';
-class MyComponent extends LitElement {
-  static get styles() {
-    return css`
-      .menu-content {
-        padding: 1rem;
-      }
-      h2 {
-        margin: 0 0 10px 0;
-      }
-      h2 span {
-        font-size: 0.9rem;
-      }
-      p {
-        margin-top: 0;
-      }
-    `
-  }
-
-  render() {
-    return html`
-      <dile-app-drawer id="menu">
-        <div class="menu-content">
-          <h2>Menu <span>(Click outside to close)</span></h2>
-          <p><a href="#">Link 1</a></p>
-          <p><a href="#">Another link</a></p>
-          <p><a href="#">More information</a></p>
-          <p><a href="#">Contact us</a></p>
-        </div>
-      </dile-app-drawer>
-      <button id="open">Show app drawer</button>
-    `
-  }
-  firstUpdated() {
-    this.shadowRoot.getElementById('open').addEventListener('click', () => {
-      this.shadowRoot.getElementById('menu').open();
-    });
-  }
-}
-customElements.define('my-component', MyComponent);
-export const JsStory = () => html`<my-component></my-component>`;
+```html:preview
+<dile-app-drawer id="menu">
+  <div class="menu-content">
+    <h2>Menu <span>(Click outside to close)</span></h2>
+    <p><a href="#">Link 1</a></p>
+    <p><a href="#">Another link</a></p>
+    <p><a href="#">More information</a></p>
+    <p><a href="#">Contact us</a></p>
+  </div>
+</dile-app-drawer>
+<button id="open">Show app drawer</button>
+<script>
+document.getElementById('open').addEventListener('click', () => {
+  document.getElementById('menu').open();
+});
+</script>
 ```
