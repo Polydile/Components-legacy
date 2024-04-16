@@ -14,6 +14,9 @@ export class DileIcon extends LitElement {
       css`
         :host {
           display: inline-block;
+          transition-duration: 0.3s;
+          transition-timing-function: ease-in-out;
+          transition-property: background-color;
         }
         span {
           display: flex;
