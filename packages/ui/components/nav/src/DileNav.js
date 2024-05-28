@@ -39,7 +39,7 @@ export class DileNav extends LitElement {
         }
 
         .title {
-          overflow: hidden;
+          overflow: var(--dile-nav-title-overflow, hidden);
         }
       `
   }
