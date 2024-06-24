@@ -1,9 +1,4 @@
-dile-nav {
-  max-width: 1200px;
-  margin: 0 auto;
-  color: #303030;
-}
-dile-nav span.site-name {
+dile-nav span.site-name a {
   display: flex; 
   align-items: center;
   font-size: 1.1rem;
@@ -13,7 +8,7 @@ dile-nav a {
 }
 dile-nav img {
   position: relative;
-  top: 6px;
+  top: 3px;
   height: 40px;
   margin-right: 0.5rem;
 }

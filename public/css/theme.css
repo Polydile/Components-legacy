@@ -2,8 +2,6 @@ html {
   --dile-primary-color: #f3f3ae;
   --dile-secondary-color: #7BB93D;
 
-  --dile-nav-padding-y: 5px;
-  --dile-nav-padding-x: 0.75rem;
   --dile-nav-background-color: var(--secondary-color);
   --dile-nav-column-gap: 0.25rem;
   
