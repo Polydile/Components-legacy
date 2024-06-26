@@ -17,6 +17,19 @@ module.exports = function(eleventyConfig) {
     content = `<!DOCTYPE html>\n${doc.documentElement.outerHTML}`;
     return content;
   });
+
+  // Añadir colección personalizada
+  eleventyConfig.addCollection("uncategorizedComponents", function(collectionApi) {
+    return collectionApi.getFilteredByTag("components")
+        .filter(item => 
+          !item.data.tags.includes("forms") &&
+          !item.data.tags.includes("feedback") &&
+          !item.data.tags.includes("icons") &&
+          item.url !== '/components/' &&
+          item.data.hideLink !== true
+        );
+  });
+
   return {
     dir: {
       input: "docs",

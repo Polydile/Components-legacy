@@ -1,0 +1,36 @@
+<nav class="fixednav">
+  <dile-selector
+      class="drawernav"
+      selected=${this.page} 
+  >
+      <dile-selector-item icon="navigate_next" href="/">Home</dile-selector-item>
+      <dile-selector-item icon="navigate_next" href="/how-to-use">How to use</dile-selector-item>
+      <dile-selector-item icon="navigate_next" href="/contribute">Contribute</dile-selector-item>
+      <dile-selector-item icon="navigate_next" href="/components/">Components</dile-selector-item>
+      {% for component in collections.uncategorizedComponents %}
+        {% include "layout-partials/fixed-nav-item.html" %}
+      {% endfor %}
+      <div class="collection-nav">Forms</div>
+      {% for component in collections.forms %}
+        {% include "layout-partials/fixed-nav-item.html" %}
+      {% endfor %}
+      <div class="collection-nav">Feedback</div>
+      {% for component in collections.feedback %}
+        {% include "layout-partials/fixed-nav-item.html" %}
+      {% endfor %}
+      <div class="collection-nav">Icon</div>
+      {% for component in collections.icons %}
+        {% include "layout-partials/fixed-nav-item.html" %}
+      {% endfor %}
+      <dile-selector-item icon="navigate_next" href="/mixins/">Mixins</dile-selector-item>
+      {% for mixin in collections.mixins %}
+        {% if mixin.url != '/mixins/' and mixin.data.hideLink != true %}
+          <dile-selector-item class="linkcolection" icon="label_important" href="{{ mixin.url }}">
+            {{mixin.data.title}}
+          </dile-selector-item>
+        {% endif %}
+      {% endfor %}
+      <dile-selector-item icon="navigate_next" href="/utils/">Utils</dile-selector-item>
+      
+  </dile-selector>
+</nav>

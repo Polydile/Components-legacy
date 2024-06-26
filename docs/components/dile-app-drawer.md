@@ -1,5 +1,5 @@
 ---
-title: 'Component: dile-app-drawer'
+title: App Drawer
 ---
 
 
@@ -12,7 +12,7 @@ Web component to create a simple animated menu, useful as app global menu, with 
 ## Installation
 
 ```bash
-npm i @dile/dile-app-drawer
+npm i @dile/ui
 ```
 
 ## Usage
@@ -20,7 +20,7 @@ npm i @dile/dile-app-drawer
 Import the component.
 
 ```javascript
-import '@dile/dile-app-drawer/dile-app-drawer.js';
+import '@dile/ui/components/app-drawer/app-drawer.js';
 ```
 
 Use the component.
@@ -63,7 +63,7 @@ Custom property | Description | Default
 ----------------|-------------|---------
 --dile-app-drawer-content-height | Height of the menu | auto (or 100vh on "letf" direction)
 --dile-app-drawer-content-width | Width of the menu | 100vw (or auto on "left" direction)
---dile-app-drawer-background-color | Background color menu layer | #ddd
+--dile-primary-light-color | Background color menu layer | #ddd
 --dile-app-drawer-z-index | z-index menu layer | 10001
 --dile-app-drawer-closed-top | Drawer content top position in closed state | -100vh (or 0 on "left" direction) 
 --dile-app-drawer-closed-left | Drawer content left position in closed state | 0 (or -100vw on "left" direction) 
