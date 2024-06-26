@@ -17,7 +17,7 @@ title: Mixins
     >
       <dile-selector>
         {% for component in collections[tag] %}
-          {% include "layout-partials/fixed-nav-item.html" %}
+          {% include "layout-partials/nav-item.html" %}
         {% endfor %}
   
       </dile-selector>
@@ -29,7 +29,7 @@ title: Mixins
      title="Other components" 
     >
       {% for component in collections.uncategorizedComponents %}
-        {% include "layout-partials/fixed-nav-item.html" %}
+        {% include "layout-partials/nav-item.html" %}
       {% endfor %}
     </dile-card>
   {% endif %}

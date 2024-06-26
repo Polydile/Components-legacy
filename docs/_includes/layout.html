@@ -4,6 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ title | default: "Dile Components: Web Components Catalog" }}</title>
+  <style>
+    [dile-cloak] {
+      display: none !important;
+    }
+  </style>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
@@ -18,7 +23,11 @@
           <b>dile-components</b>
         </a>
       </span>
-      {% include "layout-partials/responsive-nav.html" %}
+      <dile-menu-hamburger hamburgerAlwaysVisible slot="menu" direction="left">
+        <nav class="app-menu" slot="menu" dile-cloak>
+          {% include "layout-partials/nav.html" %}
+        </nav>
+      </dile-menu-hamburger>
       <span slot="actions" class="actionsnav">
         <a href="https://github.com/Polydile/dile-components"><dile-social-icon icon="github" class="github"></dile-social-icon></a>
         <a href="https://twitter.com/DileComponents" class="xsmallandup"><dile-social-icon icon="twitter" class="twitter"></dile-social-icon></a>
@@ -28,7 +37,9 @@
 
 
   <main>
-    {% include "layout-partials/fixed-nav.html" %}
+    <nav class="fixednav">
+      {% include "layout-partials/nav.html" %}
+    </nav>
     <div class="maincontent">
       {{ content }}
     </div>
