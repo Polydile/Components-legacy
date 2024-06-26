@@ -76,7 +76,7 @@ import '@dile/ui/components/selector/dile-selector-item.js';
 
 ### Properties
 
-- **Selected**: make this option selected
+- **selected**: make this option selected
 - **icon**: Use an icon, from one of this posible values: "navigate_next", "arrow_forward", "star", "label_important", "add"
 - **href**: Optional url to create a link to that url in the selector item
 

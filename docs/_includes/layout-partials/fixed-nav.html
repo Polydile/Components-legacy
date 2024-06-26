@@ -10,14 +10,35 @@
   
       <dile-selector-item icon="navigate_next" href="/components/">Components</dile-selector-item>
       {% for tag in componentTagsList %}
-        <dile-slide-menu class="collection-nav" label="{{ tag | capitalize }}"></div>
+        {% assign isOpened = false %}
+        {% for component in collections[tag] %}
+          {% if component.url == page.url %}
+            {% assign isOpened = true %}
+          {% endif %}
+        {% endfor %}
+        <dile-slide-menu 
+          class="collection-nav" 
+          label="{{ tag | capitalize }}" 
+          {% if isOpened %}opened{% endif %}
+        ></div>
         {% for component in collections[tag] %}
           {% include "layout-partials/fixed-nav-item.html" %}
         {% endfor %}
         </dile-slide-menu>
       {% endfor %}
+
       {% if collections.uncategorizedComponents.size > 0 %}
-        <dile-slide-menu class="collection-nav" label="Other components"></div>
+        {% assign isOtherOpened = false %}
+        {% for component in collections.uncategorizedComponents %}
+          {% if component.url == page.url %}
+            {% assign isOtherOpened = true %}
+          {% endif %}
+        {% endfor %}
+        <dile-slide-menu 
+          class="collection-nav" 
+          label="Other components" 
+          {% if isOtherOpened %}opened{% endif %}
+        ></div>
         {% for component in collections.uncategorizedComponents %}
           {% include "layout-partials/fixed-nav-item.html" %}
         {% endfor %}
@@ -27,14 +48,34 @@
 
       <dile-selector-item icon="navigate_next" href="/mixins/">Mixins</dile-selector-item>
       {% for tag in mixinTagsList %}
-        <dile-slide-menu class="collection-nav" label="{{ tag | capitalize }}"></div>
+        {% assign isOpened = false %}
+        {% for component in collections[tag] %}
+          {% if component.url == page.url %}
+            {% assign isOpened = true %}
+          {% endif %}
+        {% endfor %}
+        <dile-slide-menu
+          class="collection-nav" 
+          label="{{ tag | capitalize }}"
+          {% if isOpened %}opened{% endif %}
+        ></div>
         {% for component in collections[tag] %}
           {% include "layout-partials/fixed-nav-item.html" %}
         {% endfor %}
         </dile-slide-menu>
       {% endfor %}
       {% if collections.uncategorizedMixins.size > 0 %}
-        <dile-slide-menu class="collection-nav" label="Other mixins"></div>
+      {% assign isOtherOpened = false %}
+        {% for component in collections.uncategorizedComponents %}
+          {% if component.url == page.url %}
+            {% assign isOtherOpened = true %}
+          {% endif %}
+        {% endfor %}
+        <dile-slide-menu 
+          class="collection-nav" 
+          label="Other mixins"
+          {% if isOpened %}opened{% endif %}
+        ></div>
         {% for component in collections.uncategorizedMixins %}
           {% include "layout-partials/fixed-nav-item.html" %}
         {% endfor %}

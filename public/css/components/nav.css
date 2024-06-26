@@ -46,6 +46,12 @@ dile-social-icon {
   margin: 0 0.25rem;
 }
 
+.fixednav {
+  --dile-selector-selected-background-color: var(--dile-primary-color);
+  --dile-selector-selected-text-color: #303030;
+  --dile-selector-selected-icon-color: var(--dile-secondary-color);
+}
+
 .fixednav dile-slide-menu {
   margin-left: 1.3rem;
 }
