@@ -1,9 +1,23 @@
 import { LitElement, html, css } from 'lit';
-import { arrowDropDownIcon } from '@dile/icons';
+import { 
+  arrowDropDownIcon, 
+  settingsIcon,
+  paletteIcon,
+  scaleIcon,
+  checkboxCheckedIcon,
+  autoAwesomeIcon,
+  helpIcon,
+} from '@dile/icons';
 import '@dile/ui/components/icon/icon';
 
 const iconNames = {
-  arrowDropDown: arrowDropDownIcon
+  arrowDropDown: arrowDropDownIcon,
+  settings: settingsIcon,
+  palette: paletteIcon,
+  scale: scaleIcon,
+  checkboxChecked: checkboxCheckedIcon,
+  autoAwesome: autoAwesomeIcon,
+  help: helpIcon,
 }
 
 export class DileIconName extends LitElement {
@@ -12,6 +26,7 @@ export class DileIconName extends LitElement {
       :host {
         display: flex;
         align-items: center;
+        justify-content: center;
       }
     `
   ];
