@@ -39,7 +39,7 @@ export class DileSlideShow extends DileSlideDown(LitElement) {
         padding-top: 0.5em;
         cursor: pointer;
         text-align: var(--dile-slide-show-align-control, left);
-        font-size: var(--dile-slide-down-font-size, 1em);
+        font-size: var(--dile-slide-show-font-size, 1em);
         color: var(--dile-slide-show-text-color, #39c);
         font-weight: var(--dile-slide-show-font-weight, bold);
         text-decoration: var(--dile-slide-show-text-decoration, none);

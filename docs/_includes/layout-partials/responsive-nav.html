@@ -1,0 +1,10 @@
+<dile-menu-hamburger hamburgerAlwaysVisible slot="menu" direction="left">
+  <nav class="app-menu" slot="menu">
+    <p><b>Components</b></p>
+    {% for component in collections.components %}
+      {% if component.url != '/components/' and component.data.hideLink != true %}
+        <p class="link"><dile-icon-name icon="arrowDropDown"></dile-icon-name><a href="{{ component.url }}">{{component.data.title}}</a></p>
+      {% endif %}
+    {% endfor %}
+  </nav>
+</dile-menu-hamburger>

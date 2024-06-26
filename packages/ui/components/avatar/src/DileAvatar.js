@@ -7,6 +7,7 @@ export class DileAvatar extends LitElement {
         display: inline-block;
       }
       div {
+        font-family: var(--dile-avatar-font-family, Arial, sans-serif);
         display: inline-block;
         background-repeat: no-repeat;
         background-position: center;
@@ -15,12 +16,17 @@ export class DileAvatar extends LitElement {
         height: var(--dile-avatar-size, 36px);
         border-radius: var(--dile-avatar-size, 36px);
         background-size: var(--dile-avatar-size, 36px);
-        background-color: var(--dile-avatar-background-color, #ddd);
+        background-color: var(--dile-avatar-background-color, var(--dile-primary-color, #ddd));
         color: var(--dile-avatar-color, #888);
         text-align: center;
-        font-size: calc(var(--dile-avatar-size, 36px) - 11px);
+        font-size: calc(var(--dile-avatar-size, 36px) - 14px);
         font-weight: bold;
         text-transform: uppercase;
+      }
+      .initial {
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
     `;
   }
