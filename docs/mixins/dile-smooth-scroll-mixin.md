@@ -1,5 +1,6 @@
 ---
 title: SmoothScroll
+tags: scroll
 ---
 
 ## DileSmoothScroll

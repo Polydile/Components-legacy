@@ -1,5 +1,6 @@
 ---
 title: CloseDocumentClick
+tags: effects
 ---
 
 # DileCloseDocumentClick

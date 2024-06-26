@@ -1,5 +1,6 @@
 ---
 title: SmoothScrollElement
+tags: scroll
 ---
 
 ## DileSmoothScrollElement

@@ -1,5 +1,6 @@
 ---
 title: Selectable
+tags: effects
 ---
 
 # DileSelectable

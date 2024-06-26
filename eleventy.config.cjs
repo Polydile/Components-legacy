@@ -20,7 +20,6 @@ module.exports = function(eleventyConfig) {
 
   const componentTagsList = ["forms", "feedback", "icons", "utils", "menu", "spinner"];
 
-  // Añadir colección personalizada
   eleventyConfig.addCollection("uncategorizedComponents", function(collectionApi) {
     return collectionApi.getFilteredByTag("components")
         .filter(item => 
@@ -32,6 +31,20 @@ module.exports = function(eleventyConfig) {
 
   // Añadir variable global con los tags
   eleventyConfig.addGlobalData("componentTagsList", componentTagsList);
+
+  const mixinTagsList = ["formData", "effects", "scroll"];
+
+  eleventyConfig.addCollection("uncategorizedMixins", function(collectionApi) {
+    return collectionApi.getFilteredByTag("mixins")
+        .filter(item => 
+          !mixinTagsList.some(tag => item.data.tags.includes(tag)) &&
+          item.url !== '/mixins/' &&
+          item.data.hideLink !== true
+        );
+  });
+
+  // Añadir variable global con los tags
+  eleventyConfig.addGlobalData("mixinTagsList", mixinTagsList);
 
   return {
     dir: {
