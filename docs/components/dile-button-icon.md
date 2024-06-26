@@ -47,7 +47,7 @@ html`<dile-button-icon .icon="${appsIcon}">Button Label</dile-button-icon>`
 
 ### Using a icons library
 
-> There are some icons in the [@dile/icons package](/utils/icons). So, you can use them easily in your components.
+> There are some icons in the [@dile/icons package](/icons). So, you can use them easily in your components.
 
 ```javascript
 import { closeIcon } from '@dile/icons';
