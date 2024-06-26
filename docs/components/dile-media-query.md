@@ -1,5 +1,6 @@
 ---
 title: Media Query
+tags: utils
 ---
 
 # dile-media-query

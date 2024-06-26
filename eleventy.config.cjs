@@ -18,17 +18,20 @@ module.exports = function(eleventyConfig) {
     return content;
   });
 
+  const componentTagsList = ["forms", "feedback", "icons", "utils", "menu", "spinner"];
+
   // Añadir colección personalizada
   eleventyConfig.addCollection("uncategorizedComponents", function(collectionApi) {
     return collectionApi.getFilteredByTag("components")
         .filter(item => 
-          !item.data.tags.includes("forms") &&
-          !item.data.tags.includes("feedback") &&
-          !item.data.tags.includes("icons") &&
+          !componentTagsList.some(tag => item.data.tags.includes(tag)) &&
           item.url !== '/components/' &&
           item.data.hideLink !== true
         );
   });
+
+  // Añadir variable global con los tags
+  eleventyConfig.addGlobalData("componentTagsList", componentTagsList);
 
   return {
     dir: {

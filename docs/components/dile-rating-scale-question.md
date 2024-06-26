@@ -1,5 +1,6 @@
 ---
 title: Rating Scale Question
+tags: feedback
 ---
 
 # dile-rating-scale-question

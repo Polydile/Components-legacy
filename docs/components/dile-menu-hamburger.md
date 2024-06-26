@@ -1,5 +1,6 @@
 ---
 title: Menu Hamburger
+tags: menu
 ---
 
 # dile-menu-hamburger

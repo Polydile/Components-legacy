@@ -1,5 +1,6 @@
 ---
 title: Selector
+tags: menu
 ---
 
 # dile-selector

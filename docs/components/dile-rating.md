@@ -1,5 +1,6 @@
 ---
 title: Rating
+tags: feedback
 ---
 
 # dile-rating

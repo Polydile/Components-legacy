@@ -1,5 +1,6 @@
 ---
 title: Hamburger
+tags: menu
 ---
 
 # dile-hamburger

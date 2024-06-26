@@ -1,5 +1,6 @@
 ---
 title: Button Icon
+tags: forms
 ---
 
 # dile-button-icon

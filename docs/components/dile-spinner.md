@@ -1,5 +1,6 @@
 ---
 title: Spinner
+tags: spinner
 ---
 
 # dile-spinner

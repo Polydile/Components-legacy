@@ -1,5 +1,6 @@
 ---
 title: Spinner Modal
+tags: spinner
 ---
 
 # dile-spinner-modal

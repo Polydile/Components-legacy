@@ -50,7 +50,7 @@ Custom property | Description | Default
 ----------------|-------------|---------
 --dile-slide-down-initial-height | Interface initial height | 0
 --dile-slide-show-align-control | Text align for the open / close control | 1em
---dile-slide-down-font-size | Font size for the open or close labels | 1em
+--dile-slide-show-font-size | Font size for the open or close labels | 1em
 --dile-slide-show-text-color | Label text color | #39c
 --dile-slide-show-font-weight | Label font weight | bold
 --dile-slide-show-text-decoration | Label text decoration | none

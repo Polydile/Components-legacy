@@ -1,5 +1,6 @@
 ---
 title: Pages
+tags: utils
 ---
 
 # dile-pages

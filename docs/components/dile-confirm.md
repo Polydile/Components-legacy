@@ -1,5 +1,6 @@
 ---
 title: Confirm
+tags: feedback
 ---
 
 # dile-confirm

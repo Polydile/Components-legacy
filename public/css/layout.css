@@ -98,13 +98,6 @@ blockquote {
 blockquote p:last-child {
   margin-bottom: 0;
 }
-.linkcolection {
-  font-size: 0.875rem;
-  --dile-selector-icon-size: 20px;
-  --dile-selector-icon-color: var(--primary-color);
-  margin-left: 1.3rem;
-}
-
 
 @media(min-width: 380px) {
   body {
@@ -158,6 +151,7 @@ blockquote p:last-child {
     display: block;
     min-width: 220px;
   } 
+  
   main {
     gap: 2rem;
     display: grid;

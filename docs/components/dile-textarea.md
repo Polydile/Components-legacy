@@ -1,5 +1,6 @@
 ---
 title: Textarea
+tags: forms
 ---
 
 # dile-textarea

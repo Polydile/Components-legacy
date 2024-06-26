@@ -7,21 +7,20 @@
       <dile-selector-item icon="navigate_next" href="/how-to-use">How to use</dile-selector-item>
       <dile-selector-item icon="navigate_next" href="/contribute">Contribute</dile-selector-item>
       <dile-selector-item icon="navigate_next" href="/components/">Components</dile-selector-item>
-      {% for component in collections.uncategorizedComponents %}
-        {% include "layout-partials/fixed-nav-item.html" %}
+      {% for tag in componentTagsList %}
+        <dile-slide-menu class="collection-nav" label="{{ tag | capitalize }}"></div>
+        {% for component in collections[tag] %}
+          {% include "layout-partials/fixed-nav-item.html" %}
+        {% endfor %}
+        </dile-slide-menu>
       {% endfor %}
-      <div class="collection-nav">Forms</div>
-      {% for component in collections.forms %}
-        {% include "layout-partials/fixed-nav-item.html" %}
-      {% endfor %}
-      <div class="collection-nav">Feedback</div>
-      {% for component in collections.feedback %}
-        {% include "layout-partials/fixed-nav-item.html" %}
-      {% endfor %}
-      <div class="collection-nav">Icon</div>
-      {% for component in collections.icons %}
-        {% include "layout-partials/fixed-nav-item.html" %}
-      {% endfor %}
+      {% if collections.uncategorizedComponents.size > 0 %}
+        <dile-slide-menu class="collection-nav" label="Other components"></div>
+        {% for component in collections.uncategorizedComponents %}
+          {% include "layout-partials/fixed-nav-item.html" %}
+        {% endfor %}
+        </dile-slide-menu>
+      {% endif %}
       <dile-selector-item icon="navigate_next" href="/mixins/">Mixins</dile-selector-item>
       {% for mixin in collections.mixins %}
         {% if mixin.url != '/mixins/' and mixin.data.hideLink != true %}
