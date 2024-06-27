@@ -1,6 +1,7 @@
-# Dile Components
+# Dile Components LEGACY
 
-🔖 This is the initial approach to the "dile-components" catalog. We are developing a new iteration to reorganize the "dile" custom elements more effectively. The latest version of this component catalog can be found in this repository: [https://github.com/Polydile/Components](https://github.com/Polydile/Components).
+This is the "dile-components" catalog in its first version. This is now a LEGACY repository, and we are no longer maintaining it. We have developed a new iteration to reorganize the "dile" custom elements more effectively. **The new version of this component catalog can be found in this repository: [https://github.com/Polydile/dile-components](https://github.com/Polydile/dile-components)**.
+
 
 ## See the docs and demos in the dile-components website
 
