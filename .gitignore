@@ -5,5 +5,10 @@ docs/_merged_data/
 docs/_merged_assets/
 docs/_merged_includes/
 
-# Eleventy ignore files
+# Rocket ignore files
+*-mdjs-generated.js
+*-converted-html.js
+*-converted-md.js
+*-converted-md-source.js
 _site
+_site-dev

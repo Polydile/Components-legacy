@@ -1,1 +1,0 @@
-export { DileSlideDown } from "./src/DileSlideDown.js";
