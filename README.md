@@ -7,7 +7,7 @@ This is the "dile-components" catalog in its first version. This is now a LEGACY
 
 We have a new webiste with our components catalog docs and demos!! 🎉
 
-<https://dile-components.polydile.com/>
+<https://dile-components.com/>
 
 ## What is dile-components
 
